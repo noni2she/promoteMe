@@ -1,0 +1,167 @@
+<div class="menu">
+  <div class="sub-container row">
+    <div class="col-md-2"></div>
+
+    <div id="nav" class="col-md-8">
+      <nav>
+        <ul class="navigation">
+          <li data-slide="home" class="active">HOME</li>
+          <li data-slide="about">ABOUT</li>
+          <li data-slide="skill">SKILL</li>
+          <li data-slide="project">PROJECT</li>
+          <li data-slide="contact">CONTACT</li>
+        </ul>
+      <nav>
+    </div>
+
+    <div class="col-md-2"></div>
+  </div>
+</div>
+
+<div id="slide1" class="slide" data-slide="home">
+  <div class="sub-container row">
+    <div class="col-md-12">
+      <h1>HELLO! I'M BRYCE!</h1>
+      <h4>Front-End Engineer / Web Developer / Java Programmer</h4>
+      <div><button type="button" class="btn btn-primary btn-lg button" data-slide="contact">HIRE ME</button></div>
+    </div>
+  </div>
+</div>
+
+<div id="slide2" class="slide" data-slide="about">
+  <div class="sub-container row">
+    <div class="point-down about"></div>
+    <div class="col-md-12">
+      <%= image_tag("myphoto.jpg", :alt => "nono", :id => "photo", :class => "img-circle") %>
+      <h4>
+        Hi! My name is Bryce, and I'm now a software engineer.<br>
+        I'm familiar with Java programming and web development including HTML/CSS/JavaScript.<br>
+        Besides, Ruby on Rails is my interesting web framework because of its awsome MVC.<br> 
+        For the other things, I'm interested in photography, singing, and traveling.<br><br>
+        I expect that you can see me!!! 
+      </h4>
+    </div>
+  </div>
+</div>
+
+<div id="slide3" class="slide" data-slide="skill">
+  <div class="sub-container row">
+    <div class="point-down skill"></div>
+    <h2>SKILL...</h2>
+    <div id="prePhoto"><%= image_tag("webdesign.png", :alt => "web-design", :id => "photo_web-design", :class => "img-rounded") %></div>
+    <div class="col-md-1 skills"></div>
+    <div class="col-md-2 skills">
+      <%= image_tag("html5.png", :alt => "html5", :id => "photo_html5", :class => "img-rounded skill_photo") %>
+    </div>
+    <div class="col-md-2 skills">
+      <%= image_tag("css3.png", :alt => "css3", :id => "photo_css3", :class => "img-rounded skill_photo") %>
+    </div>
+    <div class="col-md-2 skills">
+      <%= image_tag("rails.png", :alt => "rails", :id => "photo_rails", :class => "img-rounded skill_photo") %>
+    </div>
+    <div class="col-md-2 skills">
+      <%= image_tag("java.png", :alt => "java", :id => "photo_java", :class => "img-rounded skill_photo") %>
+    </div>
+    <div class="col-md-2 skills">
+      <%= image_tag("javascript.png", :alt => "javascript", :id => "photo_javascript", :class => "img-rounded skill_photo") %>
+    </div>
+    <div class="col-md-1 skills"></div>
+  </div>
+  <div class="row"><button id="showBtn" class="btn btn-warning btn-lg">show it!</button></div>
+</div>
+
+<div id="slide4" class="slide" data-slide="project">
+  <div class="sub-container row">
+    <div class="point-down project"></div>
+    <h2>PROJECT</h2>
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="table-responsive projectTables">
+        <div class="projectTable">
+          <table class="table">
+            <thead><h3>台中榮民總醫院流程平台建置專案</h3></thead>
+            <tbody>
+              <tr><th>期間</th><td>2011/12 ~ 2012/02</td></tr>
+              <tr><th>專案技術說明</th><td>開發流程工作平台的待辦事項Email通知功能</td></tr>
+              <tr><th>專案角色</th><td>Programmer</td></tr>
+              <tr><th>工作執掌</th><td>系統需求開發</td></tr>
+              <tr><th>開發工具</th><td>JSP、Struts 1、Quartz、MS SQL、Eclipse、Tomcat</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="projectTable">
+          <table class="table">
+            <thead><h3>頎邦科技移轉BPM平台專案</h3></thead>
+            <tbody>
+              <tr><th>期間</th><td>2012/02 ~ 2013/09</td></tr>
+              <tr><th>專案技術說明</th><td>ECAR表單設計與開發、流程設計與開發</td></tr>
+              <tr><th>專案角色</th><td>SD、Programmer、Consultant</td></tr>
+              <tr><th>工作執掌</th><td>表單、流程系統設計與開發</td></tr>
+              <tr><th>開發工具</th><td>JJava、Power webForm(公司內部表單開發工具)、JSF EL、MS SQL、Eclipse、Tomcat</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="projectTable">
+          <table class="table">
+            <thead><h3>嘉聯益科技人事系統與流程平台組織資料同步</h3></thead>
+            <tbody>
+              <tr><th>期間</th><td>2012/10 ~ 2013/01</td></tr>
+              <tr><th>專案技術說明</th><td>將人事系統資料撈取到一個中繼資料表格，再利用組織同步程式將中繼資料表格中的資料更新至流程平台的組織中，並輔以前端操作介面進行更新</td></tr>
+              <tr><th>專案角色</th><td>SD、Programmer</td></tr>
+              <tr><th>工作執掌</th><td>系統設計與開發</td></tr>
+              <tr><th>開發工具</th><td>JProcess Adaptor(公司內部流程開發工具、JavaBean)、JSP/Servlet、HTML、CSS、JavaScript/jQuery、Ajax、Oracle、Eclipse、Tomcat</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="projectTable">
+          <table class="table">
+            <thead><h3>新北市政府採購系統建置案</h3></thead>
+            <tbody>
+              <tr><th>期間</th><td>2013/09 ~ 2013/10</td></tr>
+              <tr><th>專案技術說明</th><td>協助開發前端套件</td></tr>
+              <tr><th>專案角色</th><td>Programmer</td></tr>
+              <tr><th>工作執掌</th><td>前端開發支援</td></tr>
+              <tr><th>開發工具</th><td>JavaScript/jQuery、jsbin</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="projectTable">
+          <table class="table">
+            <thead><h3>台北榮民總醫院差勤系統維護與電子表單開發支援</h3></thead>
+            <tbody>
+              <tr><th>期間</th><td>2013/08 ~ 2013/10</td></tr>
+              <tr><th>專案技術說明</th><td>差勤系統維護、電子表單開發問題排除</td></tr>
+              <tr><th>專案角色</th><td>Consultant</td></tr>
+              <tr><th>工作執掌</th><td>系統維護、產品開發顧問</td></tr>
+              <tr><th>開發工具</th><td>SP(Model 1)、JavaScript/jQuery、Eclipse、WAS</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <ul class="pager">
+        <li><a href="#" id="prev">上一個</a></li>
+        <li><a href="#" id="next">下一個</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+
+<div id="slide5" class="slide" data-slide="contact">
+  <div class="sub-container row">
+    <div class="point-down contact"></div>
+    <h2>CONTACT</h2>
+    <div class="col-md-12">
+      <h1>IF YOU ARE INTERESTED, CONTACT ME!!!</h1>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div><h5>© 2014 Bryce Ni. All rights reserved. <button type="button" class="btn btn-danger btn-xs button" data-slide="home">回首頁!</button></h5></div>
+</footer>
